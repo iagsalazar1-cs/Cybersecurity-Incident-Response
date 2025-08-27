@@ -56,38 +56,47 @@ This project involved a cybersecurity challenge focused on identifying a malicio
 ### **Figures and Screenshots**
 This section contains visual evidence and key screenshots from the investigation process. The images provide a step-by-step walkthrough of the methodology and serve as a visual aid to the findings.
 
-Figure 1: Screenshot of the suspicious-files directory, showing the large number of executable files.
-![Directory of suspicious files](path/to/your-image-1.png)
+Figure 1: Malicious-Files Directory.
+![Figure 1 - Malicious-Files Directory](path/to/your-image-1.png)
 
-Figure 2: Screenshot of the clamdscan error, highlighting the permission denied issue.
-![Clamdscan error](path/to/your-image-2.png)
+Figure 2: ClamAV UI Single File Scan.
+![Figure 2 - ClamAV UI Single File Scan](path/to/your-image-2.png)
 
-Figure 3: Screenshot of the clamav documentation, outlining the API and token requirements.
-![ClamAV API documentation](path/to/your-image-3.png)
+Figure 3: clamscan utility scan attempt.
+![Figure 3 - clamscan utility scan attempt](path/to/your-image-3.png)
 
-Figure 4: Screenshot of the curl command used to acquire the authentication token.
-![Curl command for auth token](path/to/your-image-4.png)
+Figure 4: ClamAV Application Programming Interface Documentation Review.
+![Figure 4 - ClamAV API Documentation](path/to/your-image-4.png)
 
-Figure 5: Screenshot of the scan_script.py in the nano text editor.
-![scan_script.py in nano editor](path/to/your-image-5.png)
+Figure 5: Token Acquisition.
+![Figure 5 - Token Acquisition](path/to/your-image-5.png)
 
-Figure 6: Screenshot showing the execution of scan_script.py in the terminal.
-![Execution of scan_script.py](path/to/your-image-6.png)
+Figure 6: Python Environment Setup.
+![Figure 6 - Python Environment Setup](path/to/your-image-6.png)
 
-Figure 7: Screenshot of the newly created scan_results directory, confirming the script's success.
-![Scan results directory](path/to/your-image-7.png)
+Figure 7: scan_script.py Python Script Execution.
+![Figure 7 - scan_script.py Script Execution](path/to/your-image-7.png)
 
-Figure 8: Screenshot of the find_infected.py in the nano text editor.
-![find_infected.py in nano editor](path/to/your-image-8.png)
+Figure 8: scan_script.py.
+![Figure 8 - scan_script.py](path/to/your-image-8.png)
 
-Figure 9: Screenshot showing the execution of find_infected.py and the identified infected file.
-![Execution of find_infected.py](path/to/your-image-9.png)
+Figure 9: scan_results Directory Verification.
+![Figure 9 - scan_results Directory Verification](path/to/your-image-9.png)
 
-Figure 10: Screenshot of the file176.exe.json file, showing the extracted MD5 hash.
-![Infected file JSON output](path/to/your-image-10.png)
+Figure 10: Scan Result Analysis Script Execution.
+![Figure 10 - Scan Result Analysis Script Execution](path/to/your-image-10.png)
 
-Figure 11: Screenshot of the VirusTotal results for file176.exe, confirming the malware detection.
-![VirusTotal scan results](path/to/your-image-11.png)
+Figure 11: find_infected.py.
+![Figure 11 - find_infected.py](path/to/your-image-11.png)
+
+Figure 12: Hash Signature Retrieval.
+![Figure 12 - Hash Signature Retrieval](path/to/your-image-12.png)
+
+Figure 13: VirusTotal Analysis of file176.exe.
+![Figure 13 - VirusTotal Analysis](path/to/your-image-13.png)
+
+Figure 14: VirusTotal Details Section of file176.exe Analysis.
+![Figure 14 - VirusTotal Details](path/to/your-image-14.png)
 
 ### **Recommendations**
 -   **Implement Robust Endpoint Security:** Deploy and maintain up-to-date antivirus and EDR solutions across all systems, configured for real-time scanning and behavioral analysis to detect and block malware.
