@@ -53,8 +53,8 @@ This project involved a cybersecurity challenge focused on identifying a malicio
   
 11.  **VirusTotal Analysis:** Uploaded file176.exe to VirusTotal, which confirmed it as trojan.shikataganai malware.
 
-Figures and Screenshots
-Here are the figures and screenshots from the report. Remember to upload these images to a folder in your repository and update the file paths.
+### **Figures and Screenshots**
+This section contains visual evidence and key screenshots from the investigation process. The images provide a step-by-step walkthrough of the methodology and serve as a visual aid to the findings.
 
 Figure 1: Screenshot of the suspicious-files directory.
 ![Directory of suspicious files](path/to/your-image-1.png)
@@ -80,17 +80,20 @@ Figure 7: Screenshot of the file176.exe.json file.
 Figure 8: Screenshot of the VirusTotal results for file176.exe.
 ![VirusTotal scan results](path/to/your-image-8.png)
 
-Recommendations
-Implement Robust Endpoint Security: Deploy and maintain up-to-date antivirus and EDR solutions across all systems, configured for real-time scanning and behavioral analysis to detect and block malware.
+### **Recommendations**
+-   **Implement Robust Endpoint Security:** Deploy and maintain up-to-date antivirus and EDR solutions across all systems, configured for real-time scanning and behavioral analysis to detect and block malware.
 
-Regular System and Network Scans: Schedule regular, comprehensive scans of all endpoints and network segments.
+-   **Regular System and Network Scans:** Schedule regular, comprehensive scans of all endpoints and network segments.
 
-Automated Threat Intelligence Integration: Integrate security tools with threat intelligence feeds (e.g., VirusTotal) for automated file hash checking.
+-   **Automated Threat Intelligence Integration:** Integrate security tools with threat intelligence feeds (e.g., VirusTotal) for automated file hash checking.
 
-Appendix: Python Scripts
+### **Appendix: Python Scripts**
 Here are the full Python scripts used in this project.
 
-scan_script.py
+**scan_script.py**
+
+``` python
+
 import requests
 import os
 import json
@@ -145,7 +148,12 @@ for filename in os.listdir(files_dir):
     except Exception as e:
         print(f"An unexpected error occurred for {filename}: {e}")
 
-find_infected.py
+```
+
+**find_infected.py**
+
+```python
+
 import os
 import json
 
@@ -174,3 +182,5 @@ for filename in os.listdir(results_dir):
             print(f"Error reading or parsing {filepath}: {e}")
 
 print("Finished checking scan results.")
+
+```
