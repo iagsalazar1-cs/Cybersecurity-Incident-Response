@@ -11,7 +11,7 @@ This repository serves as a portfolio of my hands-on experience in cybersecurity
 
 - [**Imperial Memory:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/03-Imperial-Memory) This project involved a memory forensics challenge where a memory dump and a 7-Zip archive were analyzed to uncover a hidden secret, demonstrating skills in digital forensics and artifact analysis.
 
-- [**Mail n' Trail:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/04-Mail-n'-Trail) This write-up covers the analysis of Splunk logs to investigate suspicious honeypot activity and uncover the source of malicious downloads, highlighting my experience with SIEM tools and log correlation.
+- [**Mail n' Trail:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/04-Mail-n-Trail) This write-up covers the analysis of Splunk logs to investigate suspicious honeypot activity and uncover the source of malicious downloads, highlighting my experience with SIEM tools and log correlation.
 
 #### **Hands-On Labs** (In progress...)
 - Splunk Dashboard and Alert Creation
