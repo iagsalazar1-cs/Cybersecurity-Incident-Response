@@ -1,1 +1,1 @@
-
+This folder contains all the images and figures referenced in the main README.md for the "One of Us" project report. Each image is a screenshot or visual aid that corresponds to a step in the investigation process.
