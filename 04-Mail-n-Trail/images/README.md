@@ -1,1 +1,1 @@
-
+This folder contains all the images and figures referenced in the main README.md for the "Mail n' Trail" project report. Each image provides visual documentation for the steps taken during the investigation of suspicious download activities, Splunk analysis, and flag decoding process.
