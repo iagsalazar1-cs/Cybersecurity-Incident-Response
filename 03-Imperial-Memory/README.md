@@ -28,49 +28,66 @@ The primary goal of this investigation was to analyze a memory dump and a `7-Zip
 #### Investigation Process
 
 1.  **Initial Files on Desktop:** Inspected the files on the desktop and identified `Emperor.vmem` as the memory dump and `gift.7z` as the archive with the encrypted file.
-    `![Figure 1 - Initial File Identification](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure01_Initial_File_Identification.png)`
+   
+    ![Figure 1 - Initial File Identification](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure01_Initial_File_Identification.png)
 
 2.  **Inspecting the `gift.7z` Archive:** Verified the contents of the archive using the **PeaZip** utility, and observed that it contained the encrypted `suspicious.docx` file.
-    `![Figure 2 - Inspecting the gift.7z Archive](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure02_Inspecting_gift_7z_Archive.png)`
+   
+    ![Figure 2 - Inspecting the gift.7z Archive](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure02_Inspecting_the_gift_7z_Archive.png)
 
 3.  **Checking Volatility Version:** Confirmed the **Volatility Framework** version installed in the lab environment (version `2.6.1`).
-    `![Figure 3 - Checking Volatility Version](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure03_Checking_Volatility_Version.png)`
+   
+    ![Figure 3 - Checking Volatility Version](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure03_Checking_Volatility_Version.png)
 
 4.  **Identifying Memory Dump Profile:** Ran `vol.py` on `Emperor.vmem` to identify the suggested profile `Win10x64_15063`, which was then instantiated.
-    `![Figure 4 - Identifying Memory Dump Profile](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure04_Identifying_Memory_Dump_Profile.png)`
+   
+    ![Figure 4 - Identifying Memory Dump Profile](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure04_Identifying_Memory_Dump_Profile.png)
 
 5.  **Listing Running Processes:** Ran `vol.py` on `Emperor.vmem` using its profile and observed the list of running processes, noting `powershell.exe` (PID `5496`).
-    `![Figure 5 - Listing Running Processes](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure05_Listing_Running_Processes.png)`
-    `![Figure 6 - powershell.exe Process](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure06_powershell_exe_Process.png)`
+   
+    ![Figure 5 - Listing Running Processes](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure05_Listing_Running_Processes.png)
+    
+    ![Figure 6 - powershell.exe Process](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure06_powershell_exe_Process.png)
 
 6.  **Dumping PowerShell Process Memory:** Ran `vol.py` on `Emperor.vmem` to extract the memory data of the `powershell.exe` process and verified the dump file was created.
-    `![Figure 7 - Dumping PowerShell Process Memory](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure07_Dumping_PowerShell_Process_Memory.png)`
+  
+    ![Figure 7 - Dumping PowerShell Process Memory](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure07_Dumping_PowerShell_Process_Memory.png)
 
 7.  **String Analysis of PowerShell Memory Dump:** Ran `strings` on the `5496.dmp` file, observing the output included the `7-Zip` command and password used to create the `gift.7z` archive.
-    `![Figure 8 - String Analysis of PowerShell Memory Dump](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure08_String_Analysis_PowerShell_Dump.png)`
+
+    ![Figure 8 - String Analysis of PowerShell Memory Dump](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure08_String_Analysis_of_PowerShell_Memory_Dump.png)
 
 8.  **Extracting the `gift.7z` Archive Contents:** Confirmed the availability of the `7-zip` command-line utility and ran `7z` to extract the contents of the `gift.7z` archive into the `extracted_gift` directory, observing a successful command execution.
-    `![Figure 9 - 7-zip Utility Availability](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure09_7zip_Utility_Availability.png)`
-    `![Figure 10 - Extracting the gift.7z Archive Contents](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure10_Extracting_gift_7z_Archive.png)`
+   
+    ![Figure 9 - 7-zip Utility Availability](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure09_7zip_Utility_Availability.png)
+    
+    ![Figure 10 - Extracting the gift.7z Archive Contents](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure10_Extracting_gift_7z_Archive.png)
 
 9.  **Verifying Extraction Contents:** Listed the contents of the `extracted_gift` directory, confirming the presence of the `suspicious.docx` file.
-    `![Figure 11 - Verifying Extraction Contents](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure11_Verifying_Extraction_Contents.png)`
+
+    ![Figure 11 - Verifying Extraction Contents](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure11_Verifying_Extraction_Contents.png)
 
 10. **Opening the DOCX File:** Opened `suspicious.docx` in **LibreOffice Writer** and observed the content: "I am empty!".
-    `![Figure 12 - DOCX File Contents](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure12_DOCX_File_Contents.png)`
+
+    ![Figure 12 - DOCX File Contents](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure12_DOCX_File_Contents.png)
 
 11. **String Analysis of DOCX:** Ran `strings` on the `suspicious.docx` file, observing the `strings` output and noting the line "secrets.txt".
-    `![Figure 13 - String Analysis of DOCX](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure13_String_Analysis_DOCX.png)`
-    `![Figure 14 - secrets.txt Hidden File Discovery](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure14_secrets_txt_Hidden_File_Discovery.png)`
+
+    ![Figure 13 - String Analysis of DOCX](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure13_String_Analysis_DOCX.png)
+    
+    ![Figure 14 - secrets.txt Hidden File Discovery](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure14_secrets_txt_Hidden_File_Discovery.png)
 
 12. **Unzipping the DOCX File:** Ran the `unzip` utility on the `suspicious.docx` file, saving the output into the `extracted_docx` directory. Listed the contents of `extracted_docx`, confirming the presence of `secrets.txt` file.
-    `![Figure 15 - Unzipping the DOCX File](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure15_Unzipping_DOCX_File.png)`
+    
+    ![Figure 15 - Unzipping the DOCX File](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure15_Unzipping_DOCX_File.png)
 
 13. **Viewing the Content of `secrets.txt`:** Navigated to the `extracted_docx` directory and displayed the contents of the `secrets.txt` file.
-    `![Figure 16 - Viewing the Content of secrets.txt](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure16_Viewing_secrets_txt_Content.png)`
+    
+    ![Figure 16 - Viewing the Content of secrets.txt](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure16_Viewing_secrets_txt_Content.png)
 
 14. **Hashing `secrets.txt` and Identifying the Flag:** Ran `md5sum` on the `secrets.txt` file to get its contents hash which was the required flag to complete the challenge.
-    `![Figure 17 - Hashing secrets.txt and Identifying the Flag](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure17_Hashing_secrets_txt_Flag.png)`
+    
+    ![Figure 17 - Hashing secrets.txt and Identifying the Flag](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/03-Imperial-Memory/images/Figure17_Hashing_secrets_txt_Flag.png)
 
 ### Recommendations
 
