@@ -1,1 +1,1 @@
-
+This folder contains all the images and figures referenced in the main README.md for the "Pigs Rules" project report. Each image provides visual documentation for the steps taken during the network traffic analysis, Snort rule development, and alert validation process.
