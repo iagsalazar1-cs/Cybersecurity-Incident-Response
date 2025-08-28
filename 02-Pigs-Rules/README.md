@@ -24,33 +24,44 @@ This project outlines leveraging network traffic analysis and Snort IDS rule dev
 #### Investigation Process
 
 1.  **Interface Identification:** Identified `eth0` as the primary network interface for Snort monitoring, with IP address `172.17.0.86`.
-    `![Figure 1 - Interface Identification](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure01_Interface_Identification.png)`
+   
+    ![Figure 1 - Interface Identification](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure01_Interface_Identification.png)
 
 2.  **Initial Traffic Capture:** Captured general network traffic using the tool `tcpdump` and saved it onto a file for analysis.
-    `![Figure 2 - Initial Traffic Capture](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure02_Initial_Traffic_Capture.png)`
+   
+    ![Figure 2 - Initial Traffic Capture](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure02_Initial_Traffic_Capture.png)
 
 3.  **Initial Traffic Analysis:** Analysis of the text file `capture.txt` revealed several network TCP SYN packets originating from IP `172.29.0.1` targeting ports on host `172.29.0.3`.
-    `![Figure 3 - capture.txt Analysis](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure03_capture_txt_Analysis.png)`
+   
+    ![Figure 3 - capture.txt Analysis](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure03_capture_txt_Analysis.png)
 
 4.  **SYN Packet Traffic Capture:** Captured only SYN packet network traffic using a different command variation with `tcpdump` and saved it onto a file for analysis.
-    `![Figure 4 - SYN Packet Traffic Capture](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure04_SYN_Packet_Traffic_Capture.png)`
+   
+    ![Figure 4 - SYN Packet Traffic Capture](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure04_SYN_Packet_Traffic_Capture.png)
 
 5.  **Port Scan Confirmation:** Analyzed the contents of the `syn_capture.txt` file and observed a pattern suggesting port scanning activity, identifying `172.29.0.1` as the threat actor performing the scan on `172.29.0.3`.
-    `![Figure 5 - syn_capture.txt Analysis](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure05_syn_capture_txt_Analysis.png)`
+   
+    ![Figure 5 - syn_capture.txt Analysis](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure05_syn_capture_txt_Analysis.png)
 
 6.  **Custom Snort Rule Creation:** Located the local Snort rules file and added a custom Snort rule to detect the port scan, using the `nano` command.
-    `![Figure 6 - nano Editor and Snort Configuration](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure06_nano_Editor_Snort_Config.png)`
-    `![Figure 7 - Port Scanning Rule](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure07_Port_Scanning_Rule.png)`
+   
+    ![Figure 6 - nano Editor and Snort Configuration](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure06_nano_Editor_and_Snort_Configuration.png)
+    
+    ![Figure 7 - Port Scanning Rule](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure07_Port_Scanning_Rule.png)
 
 7.  **Test Rule in Console Mode:** Tested rule by running Snort in console mode, which successfully displayed alerts for the detected port scan.
-    `![Figure 8 - Snort Console Mode](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure08_Snort_Console_Mode.png)`
-    `![Figure 9 - Console Port Scan Alerts](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure09_Console_Port_Scan_Alerts.png)`
+   
+    ![Figure 8 - Snort Console Mode](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure08_Snort_Console_Mode.png)
+    
+    ![Figure 9 - Console Port Scan Alerts](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure09_Console_Port_Scan_Alerts.png)
 
 8.  **Run Snort in IDS Mode for Snorby:** Snort was run in IDS mode to log alerts into `Snorby` (Snort Web Graphical Interface).
-    `![Figure 10 - Snort Alert Redirection to Snorby](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure10_Snort_Alert_Redirection.png)`
+   
+    ![Figure 10 - Snort Alert Redirection to Snorby](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure10_Snort_Alert_Redirection_to_Snorby.png)
 
 9.  **Flag Retrieval from Snorby:** Accessed the `Snorby` web interface dashboard and noted a high number of Snort Alert events, confirming the rule was effectively implemented. The challenge flag was successfully retrieved from the `Snorby` GUI.
-    `![Figure 11 - Flag Retrieval from Snorby](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/Images/Figure11_Flag_Retrieval_Snorby.png)`
+    
+    ![Figure 11 - Flag Retrieval from Snorby](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/02-Pigs-Rules/images/Figure11_Flag_Retrieval_from_Snorby.png)
 
 ### Recommendations
 
