@@ -3,7 +3,7 @@ This repository serves as a portfolio of my hands-on experience in cybersecurity
 
 ### **Project Write-Ups & Labs**
 
-#### **IR Certification Case Studies (CTF Challenges)** (In progress...)
+#### **IR Certification Case Studies (CTF Challenges)**
 
 - [**One of Us:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/01-One-of-Us) This project documents a cybersecurity challenge focused on identifying a malicious file and its hash signature. The solution involved using custom Python scripts to automate file scanning and analyze the results, successfully identifying the malicious artifact.
 
