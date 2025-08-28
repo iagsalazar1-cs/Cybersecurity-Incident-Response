@@ -28,76 +28,54 @@ This project involved a cybersecurity challenge focused on identifying a malicio
 #### Investigation Process
 
 1.  **Environment Reconnaissance:** The `suspicious-files` directory was found with 272 `.exe` files, indicating potential malicious artifacts.
+
+    ![Figure 1 - Malicious-Files Directory](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure01_Malicious_Files_Directory.png)
+  
 2.  **ClamAV UI Exploration:** Explored the ClamAV web UI, noting its lack of a built-in feature for scanning an entire directory.
+
+    ![Figure 2 - ClamAV UI Single File Scan](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure02_ClamAV_UI_Single_File_Scan.png)
+  
 3.  **Local ClamAV Attempt:** Failed to scan the `suspicious-files` directory with `clamscan` due to insufficient privileges.
+
+    ![Figure 3 - clamscan utility scan attempt](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure03_clamscan_utility_scan_attempt.png)
+
 4.  **ClamAV API Documentation Review:** Noted the JWT token requirement for secure authentication and file scanning.
+
+    ![Figure 4 - ClamAV API Documentation](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure04_ClamAV_API_Documentation.png)
+
 5.  **Token Acquisition:** Successfully obtained ClamAV's authentication token using `curl`, bypassing an SSL certificate verification issue.
+
+    ![Figure 5 - Token Acquisition](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure05_Token_Acquisition.png)
+
 6.  **Python Environment Setup:** Confirmed Python 3 and `pip3` were available. Installed the `requests` library to enable HTTP requests in Python scripts.
+
+    ![Figure 6 - Python Environment Setup](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure06_Python_Environment_Setup.png)
+
 7.  **Automated Scanning Script (`scan_script.py`):** Created and executed a Python script that parsed through all files in the `suspicious-files` directory and saved results to a new directory.
+
+    ![Figure 7 - scan_script.py Script Execution](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure07_scan_script_py_Script_Execution.png)
+
+    ![Figure 8 - scan_script.py]([path/to/your-image-8.png](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure08_scan_script_py.png))
+
 8.  **Scanning Script Verification of Results:** Verified that the `scan_results` directory was populated with individual result files, confirming successful automated scanning.
+
+    ![Figure 9 - scan_results Directory Verification](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure09_scan_results_Directory_Verification.png)
+
 9.  **Scan Result Analysis (`find_infected.py`):** Created a second Python script to iterate through the `scan_results` directory and identify the infected file, which was successfully identified as `file176.exe`.
+
+    ![Figure 10 - Scan Result Analysis Script Execution](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure10_Scan_Result_Analysis_Script_Execution.png)
+
+    ![Figure 11 - find_infected.py](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure11_find_infected_py.png)
+
 10. **Hash Signature Retrieval:** Examined the scan report in `file176.exe.json` to extract the malicious file's MD5 hash.
+
+    ![Figure 12 - Hash Signature Retrieval](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure12_Hash_Signature_Retrieval.png)
+  
 11. **VirusTotal Analysis:** Uploaded `file176.exe` to VirusTotal, which confirmed it as `trojan.shikataganai` malware.
 
-### Figures and Screenshots
+    ![Figure 13 - VirusTotal Analysis](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure13_VirusTotal_Analysis.png)
 
-This section contains visual evidence and key screenshots from the investigation process. The images provide a step-by-step walkthrough of the methodology and serve as a visual aid to the findings.
-
-* **Figure 1:** Malicious-Files Directory
-  
-  ![Figure 1 - Malicious-Files Directory](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure01_Malicious_Files_Directory.png)
-
-* **Figure 2:** ClamAV UI Single File Scan
-  
-  ![Figure 2 - ClamAV UI Single File Scan](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure02_ClamAV_UI_Single_File_Scan.png)
-
-* **Figure 3:** `clamscan` utility scan attempt
-  
-  ![Figure 3 - clamscan utility scan attempt](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure03_clamscan_utility_scan_attempt.png)
-
-* **Figure 4:** ClamAV Application Programming Interface Documentation Review
-  
-  ![Figure 4 - ClamAV API Documentation](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure04_ClamAV_API_Documentation.png)
-
-* **Figure 5:** Token Acquisition
-  
-  ![Figure 5 - Token Acquisition](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure05_Token_Acquisition.png)
-
-* **Figure 6:** Python Environment Setup
-  
-  ![Figure 6 - Python Environment Setup](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure06_Python_Environment_Setup.png)
-
-* **Figure 7:** `scan_script.py` Python Script Execution
-  
-  ![Figure 7 - scan_script.py Script Execution](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure07_scan_script_py_Script_Execution.png)
-
-* **Figure 8:** `scan_script.py`
-  
-  ![Figure 8 - scan_script.py]([path/to/your-image-8.png](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure08_scan_script_py.png))
-
-* **Figure 9:** `scan_results` Directory Verification
-  
-  ![Figure 9 - scan_results Directory Verification](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure09_scan_results_Directory_Verification.png)
-
-* **Figure 10:** Scan Result Analysis Script Execution
-  
-  ![Figure 10 - Scan Result Analysis Script Execution](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure10_Scan_Result_Analysis_Script_Execution.png)
-
-* **Figure 11:** `find_infected.py`
-  
-  ![Figure 11 - find_infected.py](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure11_find_infected_py.png)
-
-* **Figure 12:** Hash Signature Retrieval
-  
-  ![Figure 12 - Hash Signature Retrieval](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure12_Hash_Signature_Retrieval.png)
-
-* **Figure 13:** VirusTotal Analysis of `file176.exe`
-  
-  ![Figure 13 - VirusTotal Analysis](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure13_VirusTotal_Analysis.png)
-
-* **Figure 14:** VirusTotal Details Section of `file176.exe` Analysis
-  
-  ![Figure 14 - VirusTotal Details](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure14_VirusTotal_Details.png)
+    ![Figure 14 - VirusTotal Details](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure14_VirusTotal_Details.png)
 
 ### Recommendations
 
