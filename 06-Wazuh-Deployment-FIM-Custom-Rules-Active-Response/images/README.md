@@ -1,1 +1,1 @@
-
+This folder contains all the images and figures referenced in the main `README.md` for the "Wazuh Deployment in VirtualBox - FIM, Custom Rules, and Active Response" project report. Each image provides visual documentation for the steps taken during Wazuh deployment, FIM configuration, custom rule creation, and active response implementation.
