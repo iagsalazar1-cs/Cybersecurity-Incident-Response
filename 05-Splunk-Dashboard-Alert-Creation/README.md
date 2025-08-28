@@ -1,3 +1,5 @@
+© 2025 Ivan Salazar. All rights reserved.
+
 `![Figure 1 - Splunk Enterprise Logo](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure01_Splunk_Enterprise_Logo.png)`
 
 # Splunk Dashboard and Alert Creation
