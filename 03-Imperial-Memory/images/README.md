@@ -1,1 +1,1 @@
-
+This folder contains all the images and figures referenced in the main README.md for the "Imperial Memory" project report. Each image provides visual documentation for the steps taken during the memory forensics analysis, archive decryption, and secret retrieval process.
