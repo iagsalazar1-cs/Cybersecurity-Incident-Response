@@ -1,6 +1,4 @@
-© 2025 Ivan Salazar. All rights reserved.
-
-`![Figure 1 - Splunk Enterprise Logo](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure01_Splunk_Enterprise_Logo.png)`
+![Figure 1 - Splunk Enterprise Logo](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure01_Splunk_Enterprise_Logo.png)
 
 # Splunk Dashboard and Alert Creation
 
@@ -42,31 +40,31 @@ This project integrates two core **Splunk** exercises. First, interactive dashbo
 
 ### Task 1: Initiate Splunk, Access Web Interface, and Generate 404 Traffic
 
+![Figure 2 - Splunk Web Login](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure02_Splunk_Web_Login.png)
+
 * Initiated the **Splunk** service from a terminal.
 
 * Navigated to the **Splunk** web interface and logged into the **Splunk** web interface at `localhost:8000` using `admin` credentials.
 
 * Refreshed `http://localhost/random` in `Firefox` to generate `HTTP 404` status codes.
 
-`![Figure 2 - Splunk Service Initiated](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure02_Splunk_Service_Initiated.png)`
+![Figure 3 - Splunk Service Initiated](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure03_Splunk_Service_Initiated.png)
 
-`![Figure 3 - Splunk Web Login](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure03_Splunk_Web_Login.png)`
-
-`![Figure 4 - Generate HTTP 404 Traffic](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure04_Generate_HTTP_404_Traffic.png)`
+![Figure 4 - Generate HTTP 404 Traffic](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure04_Generate_HTTP_404_Traffic.png)
 
 ### Task 2: Navigate to Dashboards Section
 
-`![Figure 5 - Navigate to Search and Reporting](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure05_Navigate_Search_and_Reporting.png)`
+![Figure 5 - Navigate to Search and Reporting](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure05_Navigate_Search_and_Reporting.png)
 
 * From the **Splunk** web interface, navigated to the "Search & Reporting" application.
 
 * Went to the "Dashboards" section.
 
-`![Figure 6 - Navigate to Dashboards](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure06_Navigate_Dashboards.png)`
+![Figure 6 - Navigate to Dashboards](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure06_Navigate_Dashboards.png)
 
 ### Task 3: Create a New Dashboard
 
-`![Figure 7 - Create Classic Dashboard Title](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure07_Create_Classic_Dashboard_Title.png)`
+![Figure 7 - Create Classic Dashboard Title](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure07_Create_Classic_Dashboard_Title.png)
 
 * Configured and created a new **Classic Dashboard**.
 
@@ -74,23 +72,23 @@ This project integrates two core **Splunk** exercises. First, interactive dashbo
 
 * Set the description to "404 Error."
 
-`![Figure 8 - Set Dashboard Description](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure08_Set_Dashboard_Description.png)`
+![Figure 8 - Set Dashboard Description](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure08_Set_Dashboard_Description.png)
 
 ### Task 4: Import Dashboard XML
 
-`![Figure 9 - XML Code Entered in Splunk Dashboard](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure09_XML_Code_Entered_Splunk_Dashboard.png)`
+![Figure 9 - XML Code Entered in Splunk Dashboard](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure09_XML_Code_Entered_Splunk_Dashboard.png)
 
 * In the dashboard's edit screen, replaced the existing `XML` source with content from `Dashboard.xml`.
 
 * Saved the dashboard.
 
-`![Figure 10 - Opened Dashboard XML in Ubuntu Terminal](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure10_Opened_Dashboard_XML_Ubuntu_Terminal.png)`
+![Figure 10 - Opened Dashboard XML in Ubuntu Terminal](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure10_Opened_Dashboard_XML_Ubuntu_Terminal.png)
 
-`![Figure 11 - Original Dashboard.xml File](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure11_Original_Dashboard_XML_File.png)`
+![Figure 11 - Original Dashboard.xml File](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure11_Original_Dashboard_XML_File.png)
 
 ### Task 5: Customize Dashboard Panel
 
-`![Figure 12 - Dashboard XML Duplication](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure12_Dashboard_XML_Duplication.png)`
+![Figure 12 - Dashboard XML Duplication](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure12_Dashboard_XML_Duplication.png)
 
 * Edited the dashboard's `XML` source and duplicated an existing panel.
 
@@ -98,31 +96,31 @@ This project integrates two core **Splunk** exercises. First, interactive dashbo
 
 * Set its `timechart` span to `1minute` and adjusted the earliest time value to `1h@h` and saved the changes.
 
-`![Figure 13 - Customized Dashboard Panel View](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure13_Customized_Dashboard_Panel_View.png)`
+![Figure 13 - Customized Dashboard Panel View](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure13_Customized_Dashboard_Panel_View.png)
 
 ### Task 6: Search for Apache Access Logs
 
-`![Figure 14 - Select Search & Reporting in Splunk](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure14_Select_Search_and_Reporting.png)`
+![Figure 14 - Select Search & Reporting in Splunk](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure14_Select_Search_and_Reporting.png)
 
 * From the left navigation pane in **Splunk**, selected "Search & Reporting."
 
 * Entered `source="/var/log/apache2/access.log"` in the search bar and clicked the search icon.
 
-`![Figure 15 - Apache Access Logs Search Query](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure15_Apache_Access_Logs_Search_Query.png)`
+![Figure 15 - Apache Access Logs Search Query](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure15_Apache_Access_Logs_Search_Query.png)
 
 ### Task 7: Define Search for 404 Errors and Initiate Alert Creation
 
-`![Figure 16 - Refine Search Query for 404 Errors](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure16_Refine_Search_Query_404_Errors.png)`
+![Figure 16 - Refine Search Query for 404 Errors](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure16_Refine_Search_Query_404_Errors.png)
 
 * Refined the search query to `source="/var/log/apache2/access.log" AND status_code=404` and executed the search.
 
 * Clicked "Save As" and selected "Alert" to begin alert creation.
 
-`![Figure 17 - Initiate Alert Creation](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure17_Initiate_Alert_Creation.png)`
+![Figure 17 - Initiate Alert Creation](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure17_Initiate_Alert_Creation.png)
 
 ### Task 8: Configure Alert Settings
 
-`![Figure 18 - Configure Alert Settings (Title, Type, Trigger Conditions)](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure18_Configure_Alert_Settings_Part1.png)`
+![Figure 18 - Configure Alert Settings (Title, Type, Trigger Conditions)](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure18_Configure_Alert_Settings_Part1.png)
 
 * Configured the new alert with the title "`Dir.Enum`."
 
@@ -134,11 +132,11 @@ This project integrates two core **Splunk** exercises. First, interactive dashbo
 
 * Throttled by `ip_addr_count` and saved the alert.
 
-`![Figure 19 - Configure Alert Settings (Trigger Actions, Throttling)](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure19_Configure_Alert_Settings_Part2.png)`
+![Figure 19 - Configure Alert Settings (Trigger Actions, Throttling)](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure19_Configure_Alert_Settings_Part2.png)
 
 ### Task 9: Trigger the Alert
 
-`![Figure 20 - Splunk Generated Alert for 404 Errors](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure20_Splunk_Generated_Alert_404_Errors.png)`
+![Figure 20 - Splunk Generated Alert for 404 Errors](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure20_Splunk_Generated_Alert_404_Errors.png)
 
 * Opened a new `Firefox` tab.
 
@@ -146,11 +144,11 @@ This project integrates two core **Splunk** exercises. First, interactive dashbo
 
 * Refreshed the page `5` times to generate sufficient `404` errors to trigger the alert.
 
-`![Figure 21 - Firefox 404 Error Generation](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure21_Firefox_404_Error_Generation.png)`
+![Figure 21 - Firefox 404 Error Generation](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure21_Firefox_404_Error_Generation.png)
 
 ### Task 10: Verify Triggered Alerts
 
-`![Figure 22 - Splunk Dir Enum Dashboard (Navigated to Triggered Alerts Menu)](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure22_Splunk_Dir_Enum_Dashboard_Navigated_Triggered_Alerts.png)`
+![Figure 22 - Splunk Dir Enum Dashboard (Navigated to Triggered Alerts Menu)](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure22_Splunk_Dir_Enum_Dashboard_Navigated_Triggered_Alerts.png)
 
 * Returned to the **Splunk** web application tab.
 
@@ -158,4 +156,4 @@ This project integrates two core **Splunk** exercises. First, interactive dashbo
 
 * Reviewed the list to confirm the alert has triggered.
 
-`![Figure 23 - Triggered Alerts Menu in Splunk](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure23_Triggered_Alerts_Menu_Splunk.png)`
+![Figure 23 - Triggered Alerts Menu in Splunk](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/05-Splunk-Dashboard-Alert-Creation/images/Figure23_Triggered_Alerts_Menu_Splunk.png)
