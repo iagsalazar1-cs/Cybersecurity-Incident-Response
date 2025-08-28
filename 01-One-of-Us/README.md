@@ -44,46 +44,60 @@ This project involved a cybersecurity challenge focused on identifying a malicio
 This section contains visual evidence and key screenshots from the investigation process. The images provide a step-by-step walkthrough of the methodology and serve as a visual aid to the findings.
 
 * **Figure 1:** Malicious-Files Directory
-    `![Figure 1 - Malicious-Files Directory](path/to/your-image-1.png)`
+  
+  ![Figure 1 - Malicious-Files Directory](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure01_Malicious_Files_Directory.png)
 
 * **Figure 2:** ClamAV UI Single File Scan
-    `![Figure 2 - ClamAV UI Single File Scan](path/to/your-image-2.png)`
+  
+  ![Figure 2 - ClamAV UI Single File Scan](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure02_ClamAV_UI_Single_File_Scan.png)
 
 * **Figure 3:** `clamscan` utility scan attempt
-    `![Figure 3 - clamscan utility scan attempt](path/to/your-image-3.png)`
+  
+  ![Figure 3 - clamscan utility scan attempt](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure03_clamscan_utility_scan_attempt.png)
 
 * **Figure 4:** ClamAV Application Programming Interface Documentation Review
-    `![Figure 4 - ClamAV API Documentation](path/to/your-image-4.png)`
+  
+  ![Figure 4 - ClamAV API Documentation](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure04_ClamAV_API_Documentation.png)
 
 * **Figure 5:** Token Acquisition
-    `![Figure 5 - Token Acquisition](path/to/your-image-5.png)`
+  
+  ![Figure 5 - Token Acquisition](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure05_Token_Acquisition.png)
 
 * **Figure 6:** Python Environment Setup
-    `![Figure 6 - Python Environment Setup](path/to/your-image-6.png)`
+  
+  ![Figure 6 - Python Environment Setup](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure06_Python_Environment_Setup.png)
 
 * **Figure 7:** `scan_script.py` Python Script Execution
-    `![Figure 7 - scan_script.py Script Execution](path/to/your-image-7.png)`
+  
+  ![Figure 7 - scan_script.py Script Execution](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure07_scan_script_py_Script_Execution.png)
 
 * **Figure 8:** `scan_script.py`
-    `![Figure 8 - scan_script.py](path/to/your-image-8.png)`
+  
+  ![Figure 8 - scan_script.py]([path/to/your-image-8.png](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure08_scan_script_py.png))
 
 * **Figure 9:** `scan_results` Directory Verification
-    `![Figure 9 - scan_results Directory Verification](path/to/your-image-9.png)`
+  
+  ![Figure 9 - scan_results Directory Verification](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure09_scan_results_Directory_Verification.png)
 
 * **Figure 10:** Scan Result Analysis Script Execution
-    `![Figure 10 - Scan Result Analysis Script Execution](path/to/your-image-10.png)`
+  
+  ![Figure 10 - Scan Result Analysis Script Execution](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure10_Scan_Result_Analysis_Script_Execution.png)
 
 * **Figure 11:** `find_infected.py`
-    `![Figure 11 - find_infected.py](path/to/your-image-11.png)`
+  
+  ![Figure 11 - find_infected.py](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure11_find_infected_py.png)
 
 * **Figure 12:** Hash Signature Retrieval
-    `![Figure 12 - Hash Signature Retrieval](path/to/your-image-12.png)`
+  
+  ![Figure 12 - Hash Signature Retrieval](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure12_Hash_Signature_Retrieval.png)
 
 * **Figure 13:** VirusTotal Analysis of `file176.exe`
-    `![Figure 13 - VirusTotal Analysis](path/to/your-image-13.png)`
+  
+  ![Figure 13 - VirusTotal Analysis](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure13_VirusTotal_Analysis.png)
 
 * **Figure 14:** VirusTotal Details Section of `file176.exe` Analysis
-    `![Figure 14 - VirusTotal Details](path/to/your-image-14.png)`
+  
+  ![Figure 14 - VirusTotal Details](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/01-One-of-Us/Images/Figure14_VirusTotal_Details.png)
 
 ### Recommendations
 
