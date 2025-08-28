@@ -16,11 +16,11 @@ This repository serves as a portfolio of my hands-on experience in cybersecurity
 
 * [**Mail n' Trail:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/04-Mail-n-Trail) This write-up covers the analysis of Splunk logs to investigate suspicious honeypot activity and uncover the source of malicious downloads, highlighting my experience with SIEM tools and log correlation.
 
-#### Hands-On Labs (In progress...)
+#### Hands-On Labs 
 
 * [**Splunk Dashboard and Alert Creation:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/05-Splunk-Dashboard-Alert-Creation) This project details the creation and customization of Splunk dashboards for visualizing HTTP 404 errors and the configuration of real-time alerts for proactive monitoring.
 
-* **Wazuh Deployment in VirtualBox - FIM, Custom Rules, and Active Response**
+* [**Wazuh Deployment in VirtualBox - FIM, Custom Rules, and Active Response:**](https://www.google.com/search?q=https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/06-Wazuh-Deployment-FIM-Custom-Rules-Active-Response) This project details the establishment of a Wazuh security system in VirtualBox, focusing on File Integrity Monitoring (FIM) configuration, custom rule creation for threat detection, and the implementation of automated active response mechanisms. **(In progress...)**
 
 * **Wazuh Deployment in VirtualBox - Windows 10 Agent & Log Management**
 
