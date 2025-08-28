@@ -1,5 +1,3 @@
-© 2025 Ivan Salazar. All rights reserved.
-
 # Mail n’ Trail - TDX Arena Certification Report
 
 ### Executive Summary
