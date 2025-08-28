@@ -1,1 +1,1 @@
-
+This folder contains all the images and figures referenced in the main `README.md` for the "Splunk Dashboard and Alert Creation" project report. Each image provides visual documentation for the steps taken during dashboard customization, alert configuration, and verification processes within Splunk.
