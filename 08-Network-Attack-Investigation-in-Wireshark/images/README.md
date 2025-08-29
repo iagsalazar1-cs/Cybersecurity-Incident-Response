@@ -1,1 +1,1 @@
-
+This folder contains all the images referenced in the "Network Attack Investigation in Wireshark" project report. These figures illustrate the steps, filters, and findings from the Wireshark analysis of the network traffic capture files.
