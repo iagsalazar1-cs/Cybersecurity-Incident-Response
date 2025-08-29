@@ -1,1 +1,1 @@
-
+This folder contains all the images and figures referenced in the main project report for "Wazuh Deployment in VirtualBox: Windows 10 Agent & Log Management". Each image provides visual documentation for the steps taken during agent deployment, FIM configuration, custom rule creation, active response implementation, and log management policies.
