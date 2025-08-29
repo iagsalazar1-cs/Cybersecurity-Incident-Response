@@ -2,7 +2,7 @@
 
 ### About this Repository
 
-This repository serves as a portfolio of my hands-on experience in cybersecurity incident response, threat analysis, and security monitoring. Each project write-up includes a detailed methodology, analysis of findings, and documentation of my workflow to demonstrate practical skills in a professional context.
+This repository showcases a comprehensive portfolio of my practical experience in cybersecurity incident response, threat analysis, and security monitoring. Each project herein documents my end-to-end workflow, from detailed methodologies and technical analysis to the documentation of findings, effectively demonstrating my hands-on skills in a professional and results-oriented context.
 
 ### Project Write-Ups & Labs
 
