@@ -16,12 +16,12 @@ This repository serves as a portfolio of my hands-on experience in cybersecurity
 
 * [**Mail n' Trail:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/04-Mail-n-Trail) This write-up covers the analysis of Splunk logs to investigate suspicious honeypot activity and uncover the source of malicious downloads, highlighting my experience with SIEM tools and log correlation.
 
-#### Hands-On Labs **(In progress...)**
+#### Hands-On Labs
 
 * [**Splunk Dashboard and Alert Creation:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/05-Splunk-Dashboard-Alert-Creation) This project details the creation and customization of Splunk dashboards for visualizing HTTP 404 errors and the configuration of real-time alerts for proactive monitoring.
 
 * [**Wazuh Deployment in VirtualBox - FIM, Custom Rules, and Active Response:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/06-Wazuh-Deployment-FIM-Custom-Rules-Active-Response) This project details the establishment of a Wazuh security system in VirtualBox, focusing on File Integrity Monitoring (FIM) configuration, custom rule creation for threat detection, and the implementation of automated active response mechanisms. 
 
-* [**Wazuh Deployment in VirtualBox - Windows 10 Agent & Log Management:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/07-Wazuh-Deployment-Windows-Agent-Log-Management) This project covers deploying a Wazuh agent on a Windows 10 VM, including FIM, custom rules, and active responses. It also demonstrates log retention and deletion policies using crontab and Wazuh Indexer management. 
+* [**Wazuh Deployment in VirtualBox - Windows 10 Agent & Log Management:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/07-Wazuh-Deployment-Windows-Agent-Log-Management) This project covers deploying a Wazuh agent on a Windows 10 VM, including FIM, custom rules, and active responses. It also demonstrates log retention and deletion policies using crontab and Wazuh Indexer management.  **(In progress...)**
 
 * **Network Attack Investigation in Wireshark**
