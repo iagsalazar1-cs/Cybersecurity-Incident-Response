@@ -22,6 +22,6 @@ This repository serves as a portfolio of my hands-on experience in cybersecurity
 
 * [**Wazuh Deployment in VirtualBox - FIM, Custom Rules, and Active Response:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/06-Wazuh-Deployment-FIM-Custom-Rules-Active-Response) This project details the establishment of a Wazuh security system in VirtualBox, focusing on File Integrity Monitoring (FIM) configuration, custom rule creation for threat detection, and the implementation of automated active response mechanisms. 
 
-* [**Wazuh Deployment in VirtualBox - Windows 10 Agent & Log Management:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/07-Wazuh-Deployment-Windows-Agent-Log-Management) This project covers deploying a Wazuh agent on a Windows 10 VM, including FIM, custom rules, and active responses. It also demonstrates log retention and deletion policies using crontab and Wazuh Indexer management.  **(In progress...)**
+* [**Wazuh Deployment in VirtualBox - Windows 10 Agent & Log Management:**](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/07-Wazuh-Deployment-Windows-Agent-Log-Management) This project covers deploying a Wazuh agent on a Windows 10 VM, including FIM, custom rules, and active responses. It also demonstrates log retention and deletion policies using crontab and Wazuh Indexer management.  
 
-* **Network Attack Investigation in Wireshark**
+* **Network Attack Investigation in Wireshark** **(In progress...)**
