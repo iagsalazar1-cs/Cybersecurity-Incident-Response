@@ -44,7 +44,7 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 
 ### Task 1: Identify Attacker's IP Address: Analyze network traffic from .pcap file 1 to identify the attacker's IP address (172.31.55.198, 172.31.43.23, 172.31.55.149, or 93.184.221.240).
 
-![Figure 1 - PCAP File 1 IP Address Identification](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure01_PCAP_File_IP_Address_Identification.png)
+![Figure 1 - PCAP File 1 IP Address Identification](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure01_PCAP_File_IP_Address_Identification.png)
 
 1. The scenario involves an organization that was the victim of two network attacks, and the traffic from these incidents was captured in two `.pcap` files. The task is to investigate the attacks using **Wireshark** and gather critical information about the incident. Observed that the `.pcap` file `1` has `13,927` captured packets.
 
@@ -52,21 +52,21 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 
 3. Filtered the `IP address 172.31.55.149`. Notice that `172.31.55.149` exhibits suspicious behavior with many `TCP` connections and `RST` responses, indicating that this address belongs to the attacker.
 
-![Figure 2 - Attacker IP Filtered Traffic](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure02_Attacker_IP_Filtered_Traffic.png)
+![Figure 2 - Attacker IP Filtered Traffic](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure02_Attacker_IP_Filtered_Traffic.png)
 
 ### Task 2: Determine Attack Time and Locate Attacked Machine's IP Address: Determine the attack time and locate the attacked machine's IP address.
 
-![Figure 3 - Time of Day Display Format](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure03_Time_of_Day_Display_Format.png)
+![Figure 3 - Time of Day Display Format](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure03_Time_of_Day_Display_Format.png)
 
 1. With the packets filtered using the attacker's `IP address 172.31.55.149`, changed the time display format to `Time of Day` by navigating to `View > Time Display Format > Time of Day`.
 
 2. Observed that the time the attack began is `06:05:01`. Noticed that the attacker repeatedly tries to connect to the `IP address 172.31.55.198`, indicating that this was the victim's `IP address`.
 
-![Figure 4 - Attack Start Time and Victim IP](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure04_Attack_Start_Time_and_Victim_IP.png)
+![Figure 4 - Attack Start Time and Victim IP](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure04_Attack_Start_Time_and_Victim_IP.png)
 
 ### Task 3: Identify Attacked Ports: Examine the traffic to determine which ports the attacker attempted to access.
 
-![Figure 5 - Attacked Ports](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure05_Attacked_Ports.png)
+![Figure 5 - Attacked Ports](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure05_Attacked_Ports.png)
 
 1. Noticed that the attacker sent multiple requests to the victim machine via various `TCP ports`, including `21`, `443`, and `445`. To determine how many packets involving the attacker `IP address 172.31.55.149` used `TCP Port 443`, added the `tcp.port == 443` filter to the filter bar to display the packets involving the attacker.
 
@@ -74,11 +74,11 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 
 3. Noticed that the attacker is the source and the victim is the destination in `10` packets to `Port 443` from various port numbers.
 
-![Figure 6 - Attacker IP Address and Port 443 Filtered Packets](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure06_Attacker_IP_Address_and_Port_443_Filtered_Packets.png)
+![Figure 6 - Attacker IP Address and Port 443 Filtered Packets](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure06_Attacker_IP_Address_and_Port_443_Filtered_Packets.png)
 
 ### Task 4: Investigate TCP Handshake: Investigate the TCP three-way handshake used to find open ports, focusing on ports like 445, 135, and 53.
 
-![Figure 7 - SYN Requests and Unanswered Ports](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure07_SYN_Requests_and_Unanswered_Ports.png)
+![Figure 7 - SYN Requests and Unanswered Ports](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure07_SYN_Requests_and_Unanswered_Ports.png)
 
 1. Noticed that the attacker sent multiple `SYN requests` to the victim machine via various `TCP ports`. Many of the requests went unanswered by the victim, indicating closed ports.
 
@@ -86,11 +86,11 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 
 3. Observed such an instance when examining the results of a filter between the attacker and the victim via `Port 445`: `ip.addr == 172.31.55.149 && tcp.port == 445`.
 
-![Figure 8 - Port 445 RST Communication](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure08_Port_445_RST_Communication.png)
+![Figure 8 - Port 445 RST Communication](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure08_Port_445_RST_Communication.png)
 
 ### Task 5: Identify the second Attacker's IP Address from .pcap file 2: Analyze network traffic to identify the address (172.31.110.51, 172.31.43.23, 172.31.100.112, or 93.184.221.240).
 
-![Figure 9 - PCAP File 2 Packet Examination](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure09_PCAP_File_2_Packet_Examination.png)
+![Figure 9 - PCAP File 2 Packet Examination](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure09_PCAP_File_2_Packet_Examination.png)
 
 1. Observed that the `.pcap` file `2` has `39,827` captured packets. Investigated the following `IP` addresses using the filter `ip.addr==`:
 
@@ -102,21 +102,21 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 
 5. `172.31.100.112` (This `IP address` shows suspicious behavior with many `TCP` connections and `RST` responses, indicating this address is the attacker’s machine).
 
-![Figure 10 - Attacker IP 2 Filtered Traffic](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure10_Attacker_IP_2_Filtered_Traffic.png)
+![Figure 10 - Attacker IP 2 Filtered Traffic](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure10_Attacker_IP_2_Filtered_Traffic.png)
 
 ### Task 6: Determine Attack Time: Determine the exact time of the attack.
 
-![Figure 11 - Attacker IP 2 Time Filter](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure11_Attacker_IP_2_Time_Filter.png)
+![Figure 11 - Attacker IP 2 Time Filter](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure11_Attacker_IP_2_Time_Filter.png)
 
 1. Using the attacker's `IP address` filter `ip.addr== 172.31.100.112`. Changed the time display format to `Time of Day` by navigating to `View > Time Display Format > Time of Day`.
 
 2. Observed that the time the attack began is `10:46:01`.
 
-![Figure 12 - Attack 2 Start Time](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure12_Attack_2_Start_Time.png)
+![Figure 12 - Attack 2 Start Time](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure12_Attack_2_Start_Time.png)
 
 ### Task 7: Investigate TCP Handshake: Investigate the attacker's TCP three-way handshake requests.
 
-![Figure 13 - Attacker Port 21 SYN Requests](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure13_Attacker_Port_21_SYN_Requests.png)
+![Figure 13 - Attacker Port 21 SYN Requests](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure13_Attacker_Port_21_SYN_Requests.png)
 
 1. Filtered the packets according to the attacker's `IP address` and the `port number` by running the command: `ip.addr==172.31.100.112 && tcp.port==21`.
 
@@ -124,19 +124,19 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 
 3. Determined that the port is closed as the attacked machine does not reply to the attacker's `SYN` request.
 
-![Figure 14 - Port 21 Closed No Response](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure14_Port_21_Closed_No_Response.png)
+![Figure 14 - Port 21 Closed No Response](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure14_Port_21_Closed_No_Response.png)
 
 ### Task 8: Locate Attacked Machine's IP Address: Locate the attacked machine's IP address.
 
-![Figure 15 - Attacker Repeated Connections](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure15_Attacker_Repeated_Connections.png)
+![Figure 15 - Attacker Repeated Connections](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure15_Attacker_Repeated_Connections.png)
 
 1. Noticed that the attacker repeatedly tried to connect to the `IP address 172.31.110.51`, indicating that this is the victim's `IP address`.
 
-![Figure 16 - Victim IP Identified](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure16_Victim_IP_Identified.png)
+![Figure 16 - Victim IP Identified](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure16_Victim_IP_Identified.png)
 
 ### Task 9: Determine Open Ports: Determine which ports are open on the attacked machine: 110, 445, 21, and 3306.
 
-![Figure 17 - Port Filtering Wireshark](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure17_Port_Filtering_Wireshark.png)
+![Figure 17 - Port Filtering Wireshark](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure17_Port_Filtering_Wireshark.png)
 
 1. Filtered each port by running the command `tcp.port==`:
 
@@ -148,11 +148,11 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 
 5. `tcp.port=445` (`Port 445` responds to the attacker's `SYN` request with `SYN, ACK`. `Port 445` is open).
 
-![Figure 18 - Open Port 445 SYN ACK](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure18_Open_Port_445_SYN_ACK.png)
+![Figure 18 - Open Port 445 SYN ACK](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure18_Open_Port_445_SYN_ACK.png)
 
 ### Task 10: Identify Unvisited Websites: Determine which websites were NOT visited by legitimate users: [www.msn.com](https://www.msn.com), [www.yahoo.com](https://www.yahoo.com), [www.bing.com](https://www.bing.com), and [www.google.com](https://www.google.com).
 
-![Figure 19 - Find Packet Feature](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure19_Find_Packet_Feature.png)
+![Figure 19 - Find Packet Feature](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure19_Find_Packet_Feature.png)
 
 1. Used the `Find Packet` feature in **Wireshark** to search for each website by navigating to `Edit > Find Packet`. Changed `Display filter` to `String` and changed `Packet list` to `Packet details`.
 
@@ -160,7 +160,7 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 
 3. Searched for `www.yahoo.com`. Observed that no packets contained this string, indicating that this website was not browsed and is the address that was not visited by users.
 
-![Figure 20 - Yahoo Not Visited](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/tree/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure20_Yahoo_Not_Visited.png)
+![Figure 20 - Yahoo Not Visited](https://github.com/iagsalazar1-cs/Cybersecurity-Incident-Response/blob/main/08-Network-Attack-Investigation-in-Wireshark/images/Figure20_Yahoo_Not_Visited.png)
 
 ---
 
