@@ -36,9 +36,9 @@ This project integrates two core **Splunk** exercises. First, interactive dashbo
 
 * **Task 10:** Verify Triggered Alerts: Verify alert functionality by accessing **Splunk's** 'Triggered Alerts' section and reviewing the list.
 
----
+### Step-by-Step Guide
 
-### Step-by-Step
+---
 
 ### Task 1: Initiate Splunk, Access Web Interface, and Generate 404 Traffic
 
