@@ -1,6 +1,6 @@
 # Wazuh Deployment in VirtualBox: FIM, Custom Rules, and Active Response
 
-### Overview
+### Project Overview
 
 This project outlines establishing and managing a **Wazuh** security system. Key objectives include configuring `File Integrity Monitoring (FIM)`, creating specialized threat detection rules, and implementing automated active response. This process occurs in a **VirtualBox** environment using `Ubuntu Server` and `Client` `VMs`.
 
@@ -14,7 +14,7 @@ This project outlines establishing and managing a **Wazuh** security system. Key
 
 * Implement automated active response mechanisms.
 
-### Tasks
+### Task Summary
 
 * **Task 1:** Connect to the `Ubuntu Server VM` and review the **Wazuh** quickstart guide for installation details (`Ubuntu Server`).
 
@@ -37,6 +37,10 @@ This project outlines establishing and managing a **Wazuh** security system. Key
 * **Task 10:** Verify custom rule deployment and configure active response to trigger with custom rule (Ubuntu Server).
 
 * **Task 11:** Review and configure active response within the custom rule file on the `Ubuntu Client`. Observe the triggered active response and dashboard updates on the `Ubuntu Server` (`Ubuntu Client & Server`).
+
+---
+
+### Step-by-Step
 
 ### Task 1: Connect to the Ubuntu Server VM and review the Wazuh quickstart guide for installation details (Ubuntu Server)
 
