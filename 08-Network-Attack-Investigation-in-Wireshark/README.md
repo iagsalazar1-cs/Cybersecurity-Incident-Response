@@ -1,6 +1,6 @@
 # Network Attack Investigation in Wireshark
 
-### Overview
+### Project Overview
 
 This project involves analyzing network traffic captured in `.pcap` files using **Wireshark** to investigate simulated network attacks. As a network security analyst, the goal is to identify the attacker, the timing of the attack, the targeted machine, and the techniques employed. This will be done by filtering and examining network packets to uncover critical details about the security incident. The investigation concludes with the finding's details for both `.pcap` files being summarized at the end report.
 
@@ -18,7 +18,7 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 
 * Write a summary of the investigation's findings
 
-### Tasks
+### Task Summary
 
 * **Task 1:** Identify Attacker's `IP Address`: Analyze network traffic from `.pcap` file `1` to identify the attacker's `IP address` (`172.31.55.198`, `172.31.43.23`, `172.31.55.149`, or `93.184.221.240`).
 
@@ -41,6 +41,10 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 * **Task 10:** Identify Unvisited Websites: Determine which websites were `NOT` visited by legitimate users: `www.msn.com`, `www.yahoo.com`, `www.bing.com`, and `www.google.com`.
 
 *  **Conclusion of the Investigation:** The investigation of two `.pcap` files revealed two distinct network attack incidents, indicative of network mapping. See conclusion section for a full summary of the investigation's findings.
+
+---
+
+### Step-by-Step
 
 ### Task 1: Identify Attacker's IP Address: Analyze network traffic from .pcap file 1 to identify the attacker's IP address (172.31.55.198, 172.31.43.23, 172.31.55.149, or 93.184.221.240).
 
