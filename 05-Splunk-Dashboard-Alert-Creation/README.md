@@ -1,6 +1,6 @@
 # Splunk Dashboard and Alert Creation
 
-### Overview
+### Project Overview
 
 This project integrates two core **Splunk** exercises. First, interactive dashboards are created and modified for data display. Second, alerts for real-time event monitoring are configured. A central aim involves constructing a dashboard to observe `HTTP 404` errors from Apache web server logs. Following this, real-time alerts for these errors are established. Such a process demonstrates comprehensive data observation and analysis within **Splunk**.
 
@@ -14,7 +14,7 @@ This project integrates two core **Splunk** exercises. First, interactive dashbo
 
 * Understand the end-to-end **Splunk** workflow, from data ingestion and visualization to proactive alerting.
 
-### Tasks
+### Task Summary
 
 * **Task 1:** Initiate **Splunk**, Access Web Interface, and Generate `404` Traffic: Start the **Splunk** service via terminal, access its web interface via `Firefox`, and create `HTTP 404` status codes by refreshing a `URL`.
 
@@ -35,6 +35,10 @@ This project integrates two core **Splunk** exercises. First, interactive dashbo
 * **Task 9:** Trigger the Alert: Trigger the configured alert by generating sufficient `HTTP 404` errors through repeated page refreshes in `Firefox`.
 
 * **Task 10:** Verify Triggered Alerts: Verify alert functionality by accessing **Splunk's** 'Triggered Alerts' section and reviewing the list.
+
+---
+
+### Step-by-Step
 
 ### Task 1: Initiate Splunk, Access Web Interface, and Generate 404 Traffic
 
