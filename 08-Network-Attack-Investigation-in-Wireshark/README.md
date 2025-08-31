@@ -42,9 +42,9 @@ This project involves analyzing network traffic captured in `.pcap` files using 
 
 *  **Conclusion of the Investigation:** The investigation of two `.pcap` files revealed two distinct network attack incidents, indicative of network mapping. See conclusion section for a full summary of the investigation's findings.
 
----
+### Step-by-Step Guide
 
-### Step-by-Step
+---
 
 ### Task 1: Identify Attacker's IP Address: Analyze network traffic from .pcap file 1 to identify the attacker's IP address (172.31.55.198, 172.31.43.23, 172.31.55.149, or 93.184.221.240).
 
