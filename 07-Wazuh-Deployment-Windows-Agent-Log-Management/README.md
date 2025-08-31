@@ -46,9 +46,9 @@ This project details setting up a **Wazuh** agent on a `Windows 10` virtual mach
 
 * **Task 15:** Navigated `Index Management`, applied "`Wazuh-Yearly-Retention`" policy to indices, and confirmed application status.
 
----
+### Step-by-Step Guide
 
-### Step-by-Step
+---
 
 ### Task 1: Windows 10 VM preparation and initial Wazuh dashboard overview (Win10Client and UbuntuHost Server)
 
