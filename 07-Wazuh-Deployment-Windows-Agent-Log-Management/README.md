@@ -1,6 +1,6 @@
 # Wazuh Deployment in VirtualBox: Windows 10 Agent & Log Management
 
-### Overview
+### Project Overview
 
 This project details setting up a **Wazuh** agent on a `Windows 10` virtual machine in **Oracle VirtualBox**. Key objectives include agent installation, configuring `File Integrity Monitoring (FIM)`, creating custom detection rules, and setting up active responses. It also covers log retention and deletion policies using `crontab` jobs and **Wazuh Indexer** management, aiming to demonstrate a complete security monitoring setup with endpoint detection and response.
 
@@ -14,7 +14,7 @@ This project details setting up a **Wazuh** agent on a `Windows 10` virtual mach
 
 * Manage log retention and deletion policies through both command-line and **Wazuh Indexer** interfaces.
 
-### Tasks
+### Task Summary
 
 * **Task 1:** `Windows 10 VM` preparation and initial **Wazuh** dashboard overview.
 
@@ -45,6 +45,10 @@ This project details setting up a **Wazuh** agent on a `Windows 10` virtual mach
 * **Task 14:** Reviewed and confirmed successful creation and active status of "`Wazuh-Yearly-Retention`" policy, observing states and transitions.
 
 * **Task 15:** Navigated `Index Management`, applied "`Wazuh-Yearly-Retention`" policy to indices, and confirmed application status.
+
+---
+
+### Step-by-Step
 
 ### Task 1: Windows 10 VM preparation and initial Wazuh dashboard overview (Win10Client and UbuntuHost Server)
 
