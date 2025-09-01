@@ -4,6 +4,8 @@
 
 This repository showcases a comprehensive portfolio of my practical experience in cybersecurity incident response, threat analysis, and security monitoring. Each project herein documents my end-to-end workflow, from detailed methodologies and technical analysis to the documentation of findings, effectively demonstrating my hands-on skills in a professional and results-oriented context.
 
+---
+
 ### Project Write-Ups & Labs
 
 #### IR Certification Case Studies (CTF Challenges)
